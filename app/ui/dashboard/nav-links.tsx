@@ -23,13 +23,11 @@ const links = [
 export default function NavLinks() {
 
   const pathName = usePathname();
-  console.log(pathName)
 
   return (
     <>
       {links.map((link) => {
         const LinkIcon = link.icon;
-        console.log(link.href === pathName)
         return (
           <Link
             key={link.name}
